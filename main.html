@@ -8,7 +8,7 @@
 <body>
 
 <div class="container">
-    <h1>My<span>Book</span>List</h1>
+    <h1>MyBookList</h1>
 
     <div class="form-group">
         <label>Title</label>
@@ -20,18 +20,12 @@
         <label>ISBN#</label>
         <input type="text" id="isbn">
 
-        <button id="addBtn">Add Book</button>
+        <!-- IMPORTANT: id="submit" -->
+        <button id="submit">Add Book</button>
     </div>
 
-    <table id="book-list">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>ISBN#</th>
-                <th></th>
-            </tr>
-        </thead>
+    <!-- IMPORTANT: class="table-striped" -->
+    <table id="book-list" class="table-striped">
         <tbody></tbody>
     </table>
 </div>

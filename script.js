@@ -1,5 +1,4 @@
-//your JS code here. If required.
-document.getElementById("addBtn").addEventListener("click", addBook);
+document.getElementById("submit").addEventListener("click", addBook);
 
 function addBook(){
     let title = document.getElementById("title").value;
@@ -7,7 +6,6 @@ function addBook(){
     let isbn = document.getElementById("isbn").value;
 
     if(title === "" || author === "" || isbn === ""){
-        alert("Please fill all fields");
         return;
     }
 
@@ -24,7 +22,7 @@ function addBook(){
 
     table.appendChild(row);
 
-    // delete function
+    // delete row
     row.querySelector(".delete").addEventListener("click", function(){
         row.remove();
     });
