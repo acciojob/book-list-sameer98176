@@ -2,10 +2,6 @@ body{
     font-family: Arial;
 }
 
-.table-striped{
-    width:100%;
-    border-collapse: collapse;
-}
 
 td{
     border:1px solid #ccc;
@@ -17,4 +13,10 @@ td{
     color:white;
     border:none;
     cursor:pointer;
+}
+.table-striped{
+    width:100%;
+    border-collapse: collapse;
+    min-height: 50px; /* 👈 IMPORTANT FIX */
+    display: block;   /* 👈 makes height apply properly */
 }
