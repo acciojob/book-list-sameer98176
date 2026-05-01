@@ -36,11 +36,12 @@
 
   #submit{
     padding:10px;
-    background:#28a745;
+    background:blue;
     color:white;
     border:none;
     cursor:pointer;
     border-radius:5px;
+	width:80px;
   }
 
   #submit:hover{
@@ -77,12 +78,15 @@
 
 <body>
 
-<h1>MyBookList</h1>
+<h1>My<span style = color:blue>Book</span>List</h1>
 
 <div class="form-group">
+	<label>Title</label>
   <input type="text" id="title" placeholder="Book Title">
+	<label>Author</label>
   <input type="text" id="author" placeholder="Author">
-  <input type="text" id="isbn" placeholder="ISBN Number">
+	<label>ISBN#</label>
+  <input type="text" id="isbn" placeholder="ISBN">
   <button id="submit">Add Book</button>
 </div>
 
