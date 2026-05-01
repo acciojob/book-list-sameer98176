@@ -17,6 +17,5 @@ td{
 .table-striped{
     width:100%;
     border-collapse: collapse;
-    min-height: 50px; /* 👈 IMPORTANT FIX */
-    display: block;   /* 👈 makes height apply properly */
+    
 }
